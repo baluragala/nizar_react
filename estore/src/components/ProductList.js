@@ -6,17 +6,17 @@ import TryCatch from "./TryCatch";
 class ProductList extends Component {
   constructor(props) {
     super(props);
-    this.state = { title: "NA" };
+    //this.state = { title: "NA" };
     this.onProductClicked = this.onProductClicked.bind(this);
-    console.log(this.props.location);
-    console.log(queryString.parse(this.props.location.search));
-    console.log(props);
+    // console.log(this.props.location);
+    // console.log(queryString.parse(this.props.location.search));
+    // console.log(props);
   }
 
   onProductClicked(title) {
-    this.props.prds[2] = { ...this.props.prds[2], price: 1999 };
-    console.log(this.props.prds[2]);
-    this.setState({ title });
+    //this.props.prds[2] = { ...this.props.prds[2], price: 1999 };
+    //console.log(this.props.prds[2]);
+    //this.setState({ title });
   }
 
   render() {
@@ -24,7 +24,7 @@ class ProductList extends Component {
       <div>
         <h1>
           Products(
-          {this.state.title} is clicked)
+          {this.props.title} is clicked)
         </h1>
         {this.props.prds.map(p => (
           <ProductListItem
