@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Redux</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0/redux.js"></script>
+  <script src="./actions/index.js"></script>
+  <script src="./reducers/index.js"></script>
+  <script src="./store/index.js"></script>
+</head>
+
+<body>
+
+  <div>
+    <button id="incBtn">INC</button>
+    <span id="result"></span>
+    <button id="decBtn">DEC</button>
+  </div>
+
+  <script>
+    /*
+    3. principes
+      1. Single source of truth 
+      2. State is read only
+      3. Change must be made with pure functions
+    */
+
+    /*
+      1. store - this holds all application state
+      2. action - request for a state change
+      3. reducer - makes state
+    */
+
+
+    /*
+    1. plan actions
+    2. code reducers
+    3. create store
+    */
+
+    store.subscribe(function () {
+      console.log(store.getState());
+      document.querySelector('#result').textContent = store.getState().counter;
+    })
+
+    document.querySelector("#incBtn").addEventListener('click', function () {
+      store.dispatch(incActionCreator(10))
+    })
+
+    document.querySelector("#decBtn").addEventListener('click', function () {
+      store.dispatch(decActionCreator(5))
+    })
+
+
+  </script>
+
+</body>
+
+</html>

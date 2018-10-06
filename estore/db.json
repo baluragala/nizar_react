@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "id": 1,
+      "title": "iphone x",
+      "price": 2000
+    },
+    {
+      "id": 2,
+      "title": "pixel xl",
+      "price": 1200
+    },
+    {
+      "id": 3,
+      "title": "note 7",
+      "price": "1000"
+    },
+    {
+      "id": 4,
+      "title": "MI note",
+      "price": 600
+    },
+    {
+      "id": 5,
+      "title": "MI note1",
+      "price": 600
+    },
+    {
+      "id": 6,
+      "title": "MI note2",
+      "price": 600
+    },
+    {
+      "title": "tshirt",
+      "price": 200,
+      "category": "clothing",
+      "stock": "999",
+      "id": 7
+    },
+    {
+      "title": "tshirt100",
+      "price": 200,
+      "category": "clothing",
+      "stock": "999",
+      "id": 8
+    }
+  ],
+  "offers": ["Buy 1 get 1", "Flat 50%", "Buy 1 get 25% off on 2nd"]
+}

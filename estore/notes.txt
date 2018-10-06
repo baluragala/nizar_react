@@ -1,0 +1,96 @@
+JSX 
+---
+JavaScript XML syntax
+ compiled -> JS function calls -> React.createElement
+
+ expressions -> Javascrip expressions 
+
+
+ Day 2:
+ -----
+
+ Lifecycle methods 
+
+ 3 phases
+
+ 1 . Mounting
+  
+  1. constructor
+  2. render
+  3. componentDidMount 
+
+ 2 . updating
+  1. render
+  2. componentDidUpdate
+
+ 3 . Unmounting
+  1. componentWillUnmount
+
+
+Day 3
+Routing
+-------
+1. BrowserRouter
+2. Route
+3. Link
+4. NavLink
+5. Switch
+6. Redirect
+
+Props
+------
+match -> params
+location -> search
+history -> go,goBack,goForward and push
+
+
+
+
+/product/new
+/products/1
+/products
+
+
+
+
+push -> /products
+
+/products
+/product/new
+/products/1
+/products
+
+
+replace -> /products
+
+/products
+/products/1
+/products
+
+
+
+Redux 
+-----
+
+
+
+
+Redux Thunk
+-----------
+
+action -> object
+action -> function ( thunk )
+
+
+Get products ??
+Where ??? -> from api?
+
+-----------------------
+1. webpack primer
+2. SSR
+3. Unit testing 
+
+
+
+Connected vs Presentation
+-------------------------
